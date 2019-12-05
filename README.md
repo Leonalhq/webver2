@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Clone The Project
 - You can either use your git commands to clone the project or you can simple download the whole Project
 
@@ -24,3 +25,6 @@ npm run build
 - React Router
 - Talk.js Group
 - And all of my friends who continuously inspire me
+=======
+# webver2~~~
+>>>>>>> b788343f5079f7148a1e736daf1feb344112cdaf
