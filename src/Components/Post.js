@@ -2,14 +2,15 @@ import React from 'react';
 import { Route,Link} from 'react-router-dom';
 
 import TextArea from './TextArea';
-import Main from './Main';
-import HashTagMain from './HashTagMain';
-import HashTag from './HashTag';
+import Header from './Header'
+
+
 
 export default({color, data, handleSubmission, handleLove}) => {
     return (
         
         <div className="bar">
+         <Header color={color} handleColorChange= '#ffffff'/>
           <TextArea color={color} data={data} handleSubmission={handleSubmission} />
         </div>
       

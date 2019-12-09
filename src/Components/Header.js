@@ -11,7 +11,7 @@ class Header extends PureComponent {
       <header>
       <div className="navbar">
         <ul>
-          <li><Link style={{color}} to="/">Home Pages</Link></li>
+          <li><Link style={{color}} to="/main">Home Pages</Link></li>
           <li><img style={{backgroundColor: color}} alt="logo" src={sq} /></li>
           <li> <ColorPicker color={color} handleColorChange={handleColorChange} />
           </li>

@@ -30,10 +30,10 @@ export default({color, data, handleSubmission, handleLove}) => {
           pathname:'/post',
           color:this.color,
           data:this.data,
-          handleLove:this.handleLove,
-          handleSubmission:this.handleSubmission
+          handleLove:handleLove,
+          handleSubmission:{handleSubmission}
           }
-         )}>mylist</button>
+         )}>post</button>
         </div>
       </div>
     </section>

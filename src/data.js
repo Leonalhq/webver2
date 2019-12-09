@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     author: 'Jessica',
-    body: 'Soccor game tomorrow at the field!', love: false
+    body: 'Soccer game tomorrow at the field!', love: false
   }, {
     id: 2,
     author: 'Emma',
@@ -14,7 +14,7 @@ export default [
     },{
       id: 4,
       author: 'Jerry',
-      body: 'Who is interested in hicking tomorrow at White Mountin?', love: false
+      body: 'Who is interested in hiking tomorrow at White Mountain?', love: false
     },{
       id: 5,
       author: 'Anna',
