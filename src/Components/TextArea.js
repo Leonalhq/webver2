@@ -3,7 +3,7 @@ import uuidv1 from 'uuid/v1';
 
 export default class TextArea extends Component {
   state = {
-    name: 'Zonayed Ahmed',
+    name: 'Neil',
     text: '',
     allowed: 0
   }

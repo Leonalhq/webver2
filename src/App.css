@@ -23,7 +23,7 @@ ul {
 
 .navbar {
   background-color: #fff;
-  padding: 7px 0;
+  padding: 8px 0;
   border-bottom: 1px solid rgba(0,0,0,0.25);
 }
 
@@ -51,10 +51,12 @@ ul {
 
 .navbar ul li:first-child {
   text-align: left;
+  margin-top: 20px;
 }
 
 .navbar ul li:last-child {
   text-align: right;
+  margin-top: 20px;
 }
 
 .navbar ul li a {
@@ -66,8 +68,8 @@ ul {
 
 .navbar ul li img {
   background-color: #20232a;
-  height: 30px;
-  width: 30px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
 }
 
@@ -80,7 +82,10 @@ ul {
     height: 30px;
     width: 30px;
 }
-
+.post-link{
+  font:blue;
+  size:90%;
+}
 .profile {
   margin-bottom: 25px;
   text-align: center;
@@ -129,21 +134,26 @@ ul {
   padding: 20px 15px;
 }
 
-.left-sidebar form ul {
+.bar form ul {
+  /* margin-left: 360px; */
   margin-top: 8px;
   text-align: right;
+  width: 230px;
 }
 
-.left-sidebar form ul li {
+.bar form ul li {
+  /* margin-left: 360px; */
   display: inline-block;
   margin-left: 10px;
 }
 
-.left-sidebar form ul li span {
+.bar form ul li span {
+  /* margin-left: 360px; */
   font-size: 13px;
 }
 
-.left-sidebar form ul li button {
+.bar form ul li button {
+  /* margin-left: 360px; */
   border: none;
   padding: 8px 20px;
   font-weight: 700;
@@ -153,6 +163,7 @@ ul {
 }
 
 .text-input {
+  
   width: 100%;
   padding: 5px;
   border-width: 2px;
@@ -315,4 +326,49 @@ footer ul li:after {
 
 footer ul li:last-child:after {
   display: none;
+}
+.searchBar{
+  margin-left: 800px;
+  border-block-color:#ffffff;
+}
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 315px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #ffc0cb;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
 }

@@ -21,7 +21,7 @@ export default class SingleContent extends Component {
         <h3>{author}</h3>
         <p>{singleContent(data, color)}</p>
         <ul>
-          <li><button style={{backgroundColor: love ? '#e91e63' : color}} className="btn-love" onClick={() => handleLove(data)} >{love ? 'Loved' : 'Love'}</button></li>
+          <li><button style={{backgroundColor: love ? '#e91e63' : color}} className="btn-love" onClick={() => handleLove(data)} >{love ? 'Attended' : 'Wan Attend'}</button></li>
         </ul>
       </div>
     )

@@ -8,11 +8,11 @@ import HashTag from './HashTag';
 
 export default({color, data, handleSubmission, handleLove}) => {
     return (
-      <section className="post">
-        <div className="left-sidebar">
+        
+        <div className="bar">
           <TextArea color={color} data={data} handleSubmission={handleSubmission} />
         </div>
-      </section>
+      
     )
   }
 

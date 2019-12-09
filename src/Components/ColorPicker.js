@@ -12,9 +12,13 @@ export default class ColorPicker extends Component {
 
     return (
       <div className="color-pick">
-        <button className="colorpicker" style={{backgroundColor: color}} onClick={() => this.setState(show ? {show:false}:{show:true})}/>
+        <button className="colorpicker" style={{backgroundColor: color}} onClick={() => this.setState(show ? {show:false}:{show:true})} />
         {show ? <TwitterPicker onChange={({hex}) => handleColorChange(hex)} /> : null}
+       
       </div>
+      
+      
+    
     )
   }
 }
