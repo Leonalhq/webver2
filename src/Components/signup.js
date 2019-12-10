@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import sq from '../fq.png';
 
 
-class Login extends React.Component{
+class Signup extends React.Component{
     constructor(props){
         super(props);
         this.state={
@@ -31,17 +31,12 @@ class Login extends React.Component{
         )
     }
     checkuser=(e)=>{
-        if(this.state.username==='admin' && this.state.password===111){
-            alert("login success");
-            this.props.history.push({pathname:'/main'});
+        if(this.state.username.includes('@umass.edu')){
+            alert("Signup success");
+            this.props.history.push({pathname:'/'});
         }else{
-            alert("username or password wrong!");
+            alert("Not umass account, Denid");
         }
-
-    }
-    signup=(e)=>{
-        
-            this.props.history.push({pathname:'/Signup'});
 
     }
     render(){
@@ -49,18 +44,15 @@ class Login extends React.Component{
 
             <div className='Login_main'>
               <img id="flysq" alt="logo" src={sq} display="inline"/>
-                <h1 id="hh">Login</h1>
+                <h1 id="hh">Signup</h1>
                 <b className='Login'/>
                 <br></br>
-                <input ref="username" onChange={this.userchange} placeholder="Username"/>
+                <input ref="username" onChange={this.userchange} placeholder="@umass.edu"/>
                 <br/><br/>
                 <a className='password'/>
                 <input type="password" ref="password" onChange={this.passwordcange} placeholder="Password"/>
                 <br/><br/>
-                <button id='submit' onClick={this.checkuser}>Login</button>
-                <br/><br/>
-                <button id='submit' onClick={this.signup}>Signup</button>
-
+                <button id='submit' onClick={this.checkuser}>Signup</button>
                 
 
             </div>
@@ -69,4 +61,4 @@ class Login extends React.Component{
 }
 
 
-export default withRouter (Login);;
+export default withRouter (Signup);;

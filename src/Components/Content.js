@@ -22,10 +22,16 @@ export default({color, data, handleSubmission, handleLove}) => {
       </div>
       <Route exact path="/" render={() => <Main color={color} data={data} handleLove={handleLove} />} />
       <Route exact path={`/hashtag/:id`} render={(props) => <HashTagMain {...props} color={color} data={data.filter(oneData=>oneData.body.includes('#'))} handleLove={handleLove} />} />
-      <Route exact path={`/result/1`} render={(props) => <HashTagMain {...props} color={color} data={data.filter(oneData=>oneData.body.includes('#'))} handleLove={handleLove} />} />
+      {/* <Route exact path={`/result/1`} render={(props) => <HashTagMain {...props} color={color} data={data.filter(oneData=>oneData.body.includes('#'))} handleLove={handleLove} />} /> */}
       <div className="right-sidebar">
         <div className="bar">
         <TextArea color={color} data={data} handleSubmission={handleSubmission} />
+        </div>
+        <br/>
+        <div className="list">
+          <h3> My List </h3>
+          <li>Basketball on playground at time 9:00pm 1/23/2019</li>
+          <li>Soccer on gym at time 19:00pm 12/18/2019</li>
         </div>
       </div>
     </section>
