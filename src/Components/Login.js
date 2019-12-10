@@ -31,7 +31,7 @@ class Login extends React.Component{
         )
     }
     checkuser=(e)=>{
-        if(this.state.username==='admin' && this.state.password===111){
+        if(this.state.username==='tim@umass.edu' && this.state.password===111){
             alert("login success");
             this.props.history.push({pathname:'/main'});
         }else{

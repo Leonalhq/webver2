@@ -11,6 +11,7 @@ class Signup extends React.Component{
             msg:'11111',
             username:'',
             password:'',
+            verify:'',
             login:false
         };
     }
@@ -30,12 +31,28 @@ class Signup extends React.Component{
             }
         )
     }
+    verifychange=(e)=>{
+        let val = this.refs.verify.value;
+        this.setState(
+            {
+                verify:parseInt(val)
+            }
+        )
+    }
     checkuser=(e)=>{
         if(this.state.username.includes('@umass.edu')){
-            alert("Signup success");
-            this.props.history.push({pathname:'/'});
+            alert("verify code sent");
         }else{
             alert("Not umass account, Denid");
+        }
+
+    }
+    submity=(e)=>{
+        if(this.state.username.includes('@umass.edu') && this.state.verify==123456){
+            alert("signup success");
+            this.props.history.push({pathname:'/'});
+        }else{
+            alert("Not uMass account or verify code wrong, Denid");
         }
 
     }
@@ -47,12 +64,14 @@ class Signup extends React.Component{
                 <h1 id="hh">Signup</h1>
                 <b className='Login'/>
                 <br></br>
-                <input ref="username" onChange={this.userchange} placeholder="@umass.edu"/>
+                <input ref="username" onChange={this.userchange} placeholder="@umass.edu"/>  <button onClick={this.checkuser}>verify</button>
                 <br/><br/>
                 <a className='password'/>
                 <input type="password" ref="password" onChange={this.passwordcange} placeholder="Password"/>
                 <br/><br/>
-                <button id='submit' onClick={this.checkuser}>Signup</button>
+                <input ref="verify" onChange={this.verifychange} placeholder="verify code"/>
+                <br/><br/>
+                <button id='submit' onClick={this.submity}>Signup</button>
                 
 
             </div>

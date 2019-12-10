@@ -10,6 +10,12 @@ export default({hashData, color}) => {
       <h3>Filter</h3>
       <h4>Time</h4>
       <ul id="cbx1">
+      <input id = '5days' type="checkbox"/>
+        <label for="5days">within 1 days</label>
+        <br/>
+      <input id = '5days' type="checkbox"/>
+        <label for="5days">within 3 days</label>
+        <br/>
         <input id = '5days' type="checkbox"/>
         <label for="5days">within 5 days</label>
         <br/>
