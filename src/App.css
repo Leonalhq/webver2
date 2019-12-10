@@ -162,7 +162,7 @@ ul {
 }
 
 .text-input {
-  
+
   width: 100%;
   padding: 5px;
   border-width: 2px;
@@ -178,7 +178,7 @@ ul {
   border-radius: 4px;
 }
 .time {
-  
+
   width: 100%;
   padding: 5px;
   border-width: 2px;
@@ -368,7 +368,7 @@ input {
   margin-left: 30px;
   max-height: 130px;
   overflow-y: auto;
-  
+
   /* width: calc(300px + 1rem); */
 }
 
@@ -395,13 +395,14 @@ input {
   margin-top: 150px;
 }
 #hh{
-  margin-left: 50px;
+  position: relative;
+  left: 30%;
 }
 #submit{
   margin-left: 5px;
       display: block;
       width: 300px;
-      
+
       height: 50px;
       border: none;
       background: linear-gradient(120deg,#000000,#000000,#000000);
@@ -419,5 +420,50 @@ input {
   /* margin-top:20px; */
   size: 20px;
 }
+#btn{
+  background-color: gray;
+  height: 35px;
+  width: 50px;
+  color: white;
+}
 
+input[type="checkbox"]{
+  display:none;
+}
 
+input[type="checkbox"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border:1px solid;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: all .5s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background: rgb(136, 28, 28);
+}
+
+#flt{
+  background-color: rgb(136, 28, 28);
+  border: none;
+  padding: 8px 20px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 40px;
+  z-index: 1;
+  margin-top: 10px;
+
+}
+
+img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: relative;
+  left: 27%;
+  margin-top: -50px;
+}

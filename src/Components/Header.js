@@ -11,7 +11,7 @@ class Header extends PureComponent {
       <header>
       <div className="navbar">
         <ul>
-          <li><button onClick={()=> this.props.history.replace({pathname:'/'})}/></li>
+          <li><input type="submit" id="btn" value="Home" onClick={()=> this.props.history.replace({pathname:'/'})}/></li>
           <li><img style={{backgroundColor: color}} alt="logo" src={sq} /></li>
           <li className="searchBar">
         <Autocomplete
@@ -25,12 +25,11 @@ class Header extends PureComponent {
         </Autocomplete></li>
         </ul>
       </div>
-     
-  
+
+
     </header>
     );
   }
 }
 
 export default withRouter(Header);
-

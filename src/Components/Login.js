@@ -1,6 +1,7 @@
 import React from 'react';
 // import './Login.css';
 import { withRouter } from 'react-router-dom';
+import sq from '../fq.png';
 
 
 class Login extends React.Component{
@@ -42,17 +43,18 @@ class Login extends React.Component{
         return(
 
             <div className='Login_main'>
+              <img alt="logo" src={sq} display="inline"/>
                 <h1 id="hh">Login</h1>
                 <b className='Login'/>
                 <br></br>
-                <input ref="username" onChange={this.userchange} placeholder="Username"/> 
+                <input ref="username" onChange={this.userchange} placeholder="Username"/>
                 <br/><br/>
                 <a className='password'/>
-                <input ref="password" onChange={this.passwordcange} placeholder="Password"/>
-                <br/><br/>  
-                
+                <input type="password" ref="password" onChange={this.passwordcange} placeholder="Password"/>
+                <br/><br/>
+
                 <button id='submit' onClick={this.checkuser}>login</button>
-                
+
             </div>
         );
     }
