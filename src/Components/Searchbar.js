@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import { Route} from 'react-router-dom';
-
+import { withRouter } from "react-router-dom"
+import history from "./history";
 class Autocomplete extends Component {
   static propTypes = {
     suggestions: PropTypes.instanceOf(Array)
@@ -50,6 +50,8 @@ class Autocomplete extends Component {
 
   // Event fired when the user clicks on a suggestion
   onClick = e => {
+    alert("jump");
+    this.props.history.replace({pathname:'/hashtag/'+e.currentTarget.innerText});
     // Update the user input and reset the rest of the state
     this.setState({
       activeSuggestion: 0,
@@ -154,4 +156,4 @@ class Autocomplete extends Component {
   }
 }
 
-export default Autocomplete;
+export default withRouter(Autocomplete);

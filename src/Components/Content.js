@@ -20,20 +20,8 @@ export default({color, data, handleSubmission, handleLove}) => {
       <Route exact path="/" render={() => <Main color={color} data={data} handleLove={handleLove} />} />
       <Route exact path={`/hashtag/:id`} render={(props) => <HashTagMain {...props} color={color} data={data.filter(oneData=>oneData.body.includes('#'))} handleLove={handleLove} />} />
       <div className="right-sidebar">
-         
-        <div className="post-link">
-        {/* <Link to="/Post">Post</Link> */}
-         {/* <Route exact path="/post" render={() => <Post color={color} data={data} handleLove={handleLove} handleSubmission={handleSubmission}/>} /> */}
-      
-        <br/>
-        <button type="button"onClick={() =>  history.push({
-          pathname:'/post',
-          color:this.color,
-          data:this.data,
-          handleLove:handleLove,
-          handleSubmission:{handleSubmission}
-          }
-         )}>post</button>
+        <div className="bar">
+        <TextArea color={color} data={data} handleSubmission={handleSubmission} />
         </div>
       </div>
     </section>

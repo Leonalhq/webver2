@@ -56,11 +56,10 @@ ul {
 
 .navbar ul li:last-child {
   text-align: right;
-  margin-top: 20px;
 }
 
 .navbar ul li a {
-  color: #20232a;
+  color: #ffafff;
   text-decoration: none;
   display: inline-block;
   padding: 8px 10px;
@@ -73,7 +72,7 @@ ul {
   border-radius: 100%;
 }
 
-.navbar input[type="color"] {
+/* .navbar input[type="color"] {
     border: none;
     padding: 0;
     margin: 0;
@@ -81,7 +80,7 @@ ul {
     background: none;
     height: 30px;
     width: 30px;
-}
+} */
 .post-link{
   font:blue;
   size:90%;
@@ -171,6 +170,21 @@ ul {
   border-radius: 4px;
 }
 
+.location {
+  width: 100%;
+  padding: 5px;
+  border-width: 2px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.time {
+  
+  width: 100%;
+  padding: 5px;
+  border-width: 2px;
+  font-size: 14px;
+  border-radius: 4px;
+}
 .container {
   padding-top: 20px;
   width: 1000px;
@@ -328,7 +342,8 @@ footer ul li:last-child:after {
   display: none;
 }
 .searchBar{
-  margin-left: 800px;
+  /* margin-left: 800px; */
+  margin-top: 20px;
   border-block-color:#ffffff;
 }
 body {
@@ -347,14 +362,14 @@ input {
 }
 
 .suggestions {
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   border-top-width: 0;
   list-style: none;
-  margin-top: 0;
-  max-height: 143px;
+  margin-left: 30px;
+  max-height: 130px;
   overflow-y: auto;
-  padding-left: 0;
-  width: calc(300px + 1rem);
+  
+  /* width: calc(300px + 1rem); */
 }
 
 .suggestions li {

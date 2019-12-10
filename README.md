@@ -12,10 +12,6 @@ npm install
 ```
 npm start
 ```
-
-## Configure React Router
-- As I have used React Router here to navigate between some pages. This Router has a base URL hardly coded inside the ```src/App.js``` file. Please replace your ```basename``` found inside this App.js file(line number ```43```) with yours. As my demo URL is in a subdirectory(https://zonayedpca.github.io/react-micro-blog) called ```react-micro-blog```, I have used the ```basename``` as ```/react-micro-blog```. Please configure yours accordingly.
-
 ## Configure Homepage
 - Same for the production version, I have added a field called ```homepage``` inside package.json file. Please replace it with yours if you want your production version to work properly.
 

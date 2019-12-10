@@ -19,12 +19,15 @@ class main extends Component {
     this.setState({color});
   }
 
-  handleSubmission = (id, name, post) => {
+  handleSubmission = (id, name, post,time,location) => {
     let data  = this.state.data;
     post = {
       id,
       author: name,
-      body: post
+      body: post,
+      time:time,
+      location:location
+
     }
     data = [post, ...data];
     this.setState({data});
@@ -32,7 +35,7 @@ class main extends Component {
 
   handleLove = (post) => {
     let data = this.state.data;
-    data = data.map(singleData => singleData === post ? (post.love ? {id: post.id, author: post.author, body: post.body, love: false}:{id: post.id, author: post.author, body: post.body, love: true}) : singleData);
+    data = data.map(singleData => singleData === post ? (post.love ? {id: post.id, author: post.author, body: post.body,location:post.location, time:post.time,love: false}:{id: post.id, author: post.author, body: post.body,location:post.location,time:post.time,love: true}) : singleData);
     this.setState({data});
   }
 

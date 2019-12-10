@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import { Link } from 'react-router-dom';
+import { Link,withRouter } from 'react-router-dom';
 
 import ColorPicker from './ColorPicker';
 import sq from '../fq.png';
@@ -11,14 +11,10 @@ class Header extends PureComponent {
       <header>
       <div className="navbar">
         <ul>
-          <li><Link style={{color}} to="/main">Home Pages</Link></li>
+          <li><button onClick={()=> this.props.history.replace({pathname:'/'})}/></li>
           <li><img style={{backgroundColor: color}} alt="logo" src={sq} /></li>
-          <li> <ColorPicker color={color} handleColorChange={handleColorChange} />
-          </li>
-        </ul>
-      </div>
-      <div className="searchBar">
-      <Autocomplete
+          <li className="searchBar">
+        <Autocomplete
         suggestions={[
           "cs311",
           "Basketball",
@@ -26,12 +22,15 @@ class Header extends PureComponent {
           "free",
           "food"
         ]}>
-        </Autocomplete></div>
+        </Autocomplete></li>
+        </ul>
+      </div>
+     
   
     </header>
     );
   }
 }
 
-export default Header;
+export default withRouter(Header);
 

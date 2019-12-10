@@ -1,7 +1,7 @@
 {
   "name": "react-micro-blog",
   "version": "0.1.0",
-  "homepage": "https://zonayedpca.github.io/react-micro-blog",
+  "homepage": "https://github.com/Leonalhq/webver2",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",

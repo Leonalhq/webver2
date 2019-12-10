@@ -5,7 +5,6 @@ import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import Login from'./Components/Login';
 import history from './Components/history';
 import main from'./main'
-import Post from './Components/Post'
 
 class App extends Component{
   render(){
@@ -15,7 +14,7 @@ class App extends Component{
           <Switch>
             <Route exact path="/" component={Login}/>
             <Route exact path="/main" component={main}/>
-            <Route exact path="/post" component={Post}/>
+            {/* <Route exact path="/post" component={Post}/> */}
           </Switch>
         </Router>
       );
